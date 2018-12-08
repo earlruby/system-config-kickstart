@@ -170,7 +170,7 @@ class basic:
 
         if pure != "":
             if self.encrypt_root_pw_checkbutton.get_active() == True:
-                salt = "$1$"
+                salt = "$6$"
                 saltLen = 8
 
                 if not pure.startswith(salt):

@@ -135,7 +135,7 @@ class GrubBootloader(AbstractBootloader):
                 if len(gp) > 0:
                     if gp == cp:
                         if self.grub_password_encrypt_checkbutton.get_active():
-                            salt = "$1$"
+                            salt = "$6$"
                             saltLen = 8
                             for i in range(saltLen):
                                 salt = salt + random.choice (string.letters + string.digits + './')
